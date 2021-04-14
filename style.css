@@ -1,5 +1,6 @@
 body{
 	background:radial-gradient(#e66465, #9198e5);
+
 }
 
 .custom {
@@ -8,11 +9,12 @@ body{
 
 #container {
 display:grid;
-grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-padding-left:50px;
+grid-template-columns:1fr 1fr 1fr 1fr ;
+padding-top:250px;
+padding-left:120px;
 padding-right:50px;
 padding-bottom:50px;
-grid-row-gap:100px;
+grid-row-gap:150px;
 
 
 }
@@ -26,7 +28,7 @@ h1{
 	position:absolute;
 	top:285px;
 	left:360px;
-	opacity:0.6;
+	opacity:0.4;
 }
 h2{
 	font-family: 'Roboto', sans-serif;
@@ -38,6 +40,19 @@ h2{
 	border: 3px solid black;
 	border-radius: 50%;
   border-color:#dcd0ff; 
+}
+
+h3{
+	font-family: 'Roboto', sans-serif;
+	color: white;
+  font-weight: 600;
+	font-size: 10px;
+	text-align: center;
+	opacity:0.7;
+	border: 3px solid black;
+	background:radial-gradient(#e66465, #9198e5);
+	border-radius: 50%;
+  border-color:#dcd0ff; 
 	
 }
 p{
@@ -47,12 +62,7 @@ p{
 	font-size: 25px;
 	margin: 40px;
 	opacity:0.7;
-	border: 3px solid black;
-	border-radius: 50%;
-  border-color:#dcd0ff;
-  width: 170px;
-  height: 170px;
-
+	
   }
 
  .p1{
@@ -61,19 +71,31 @@ p{
 	color:white ;
 	font-size: 25px;
 	margin: 40px;
-	opacity:0.7;
-	border: 3px solid black;
+	opacity:0.4;
+	border: 0px solid black;
+	background:radial-gradient(#8a2be2, #9198e5);
 	border-radius: 50%;
   border-color:#dcd0ff;
-  width: 170px;
-  height: 170px;
-  position:absolute;
+  width: 130px;
+  height: 130px;
+  position:absolute;	
 
+}
 
-
-
-
-	
+ .p2{
+	text-align: center;
+  font-family: 'Roboto', sans-serif;
+	color:white ;
+	font-size: 25px;
+	margin: 40px;
+	opacity:0.4;
+	border: 0px solid black;
+	background:radial-gradient(#8a2be2, #9198e5);
+	border-radius: 50%;
+  border-color:#dcd0ff;
+  width: 130px;
+  height: 130px;
+  position:absolute;	
 
 }
 img{
@@ -81,6 +103,7 @@ img{
 	display: inline;
 	margin: auto;
 	clip-path: circle(25%);
+	grid-row-gap:-80px;
 	
 }
 
@@ -136,6 +159,59 @@ img{
 }
 
 
+.circle-4 {
+  height: 200px;
+  width: 200px;
+  background-color: #9999ff;
+  border-radius: 50%;
+  transform-origin: center;
+  opacity:0.6;
+  background: radial-gradient(#e66465, #9198e5);
+  top:10px;
+  bottom:0;
+  left:250px;
+  right:300px;
+  position:absolute;
+  position:fixed;
+
+}
+
+.circle-5 {
+  height: 200px;
+  width: 200px;
+  background-color: #9999ff;
+  border-radius: 50%;
+  transform-origin: center;
+  opacity:0.6;
+  background: radial-gradient(#e66465, #9198e5);
+  top:10px;
+  bottom:0;
+  left:600px;
+  right:300px;
+  position:absolute;
+  position:fixed;
+
+ 
+}
+
+.circle-6 {
+  height: 200px;
+  width: 200px;
+  background-color: #9999ff;
+  border-radius: 50%;
+  transform-origin: center;
+  opacity:0.6;
+  background: radial-gradient(#e66465, #9198e5);
+  top:10px;
+  bottom:0;
+  left:950px;
+  right:300px;
+  position:absolute;
+  position:fixed;
+
+}
+
+
 
 .circle:hover {
   opacity: 1;
@@ -149,14 +225,32 @@ img{
   opacity: 1;
 }
 
+.circle-4:hover {
+  opacity: 1;
+}
+
+.circle-5:hover {
+  opacity: 1;
+}
+
+.circle-6:hover {
+  opacity: 1;
+}
 
 .circle p {
 position: absolute;
 top:200px;
 left:160px;
-opacity:0.2;
+opacity:0.3;
 
 }
+
+
+.circle-2 p {
+position: absolute;
+top:280px;
+left:240px;
+opacity:0.3;
 
 
 
@@ -169,9 +263,36 @@ position: absolute;
 top:130px;
 left:-2px;
 right:0px;
-opacity:0.2;
+opacity:0.3;
 
 }
+
+.circle-4 p {
+position: absolute;
+top:45px;
+left:15px;
+opacity:0.3;
+
+
+}
+
+.circle-5 p {
+position: absolute;
+top:45px;
+left:15px;
+opacity:0.3;
+
+}
+
+.circle-6 p {
+position: absolute;
+top:45px;
+left:0px;
+opacity:0.3;
+
+}
+
+
 
 
 .circle p: hover {

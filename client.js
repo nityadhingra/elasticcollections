@@ -58,14 +58,22 @@ function showDots() {
 
 
     /**TO DO: Write JavaScript code to add each character's information onto the webpage**/
-    let container = document.createElement("div")
+    let container = document.createElement("a")
     container.classList.add("grid-module")
+
+
+   
     
 
 
-const dotClient = document.createElement("h2");
+const dotClient = document.createElement("h3");
 dotClient.innerText = dot.fields.client;
+dotClient.classList.add("p2")
 container.appendChild(dotClient);
+
+
+
+
 
 
 dotsContainer.append(container)

@@ -12,7 +12,99 @@
   </head>
   <body>
 
+<div>
 
+<a href="design.html">
+<div class="circle-4" id="design">  <p>DESIGN</p></div>
+</a>
+
+
+
+<a href="client.html">
+<div class="circle-5" id="client"><p>CLIENT</p></div>
+</a>
+
+<a href="designer.html">
+<div class="circle-6" id="designer"><p>DESIGNER</p></div>
+</a>
+
+ </div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div class="cursor cursor-blob"></div>
+  <style>
+  @media (hover: none) {
+          .cursor {
+              display: none !important;
+          }
+      }
+
+      * {
+          cursor: none;
+      }
+
+      .cursor {
+          z-index: 99999999999999 !important;
+          transform: translate(-50%, -50%);
+          mix-blend-mode:subtract ;
+      }
+
+      .cursor.cursor-blob {
+          --size: 28px;
+          transition: top 0.04s, left 0.04s, width .2s, height .2s;
+          transition-timing-function: ease-out;
+      }
+
+      .cursor.cursor-blob {
+          width: 50px;
+          height: 50px;
+          background: linear-gradient(120deg, #e66465, #9198e5);
+          background-size: 1600% 1600%;
+          position: absolute;
+          pointer-events: none;
+          animation: blobRadius 5s ease infinite, blobBackground 15s ease infinite;
+        border-radius:360px;
+      }
+
+
+      @keyframes blobBackground {
+          0%, 100% {
+              background-position: 0% 50%;
+          }
+
+          50% {
+              background-position: 100% 50%;
+          }
+      }
+
+      .cursor-blob.active {
+          width: 120px;
+          height: 120px;
+      }
+  </style>
+      <script>
+      $(window).mousemove(function(e) {
+          $(".cursor").css({
+              left: e.pageX,
+              top: e.pageY
+          })
+      });
+      $(window).mousemove(function(e) {
+          $("a")
+          .on("mouseenter", function() {
+              $('.cursor').addClass("active")
+          })
+      });
+      $(window).mousemove(function(e) {
+          $("a")
+          .on("mouseleave", function() {
+              $('.cursor').removeClass("active")
+          })
+      });
+      </script><script>Static.COOKIE_BANNER_CAPABLE = true;</script>
+  <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-139870842-1', 'auto');ga('send', 'pageview');</script>
+
+ 
 
 
 
