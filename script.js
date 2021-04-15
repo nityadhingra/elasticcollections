@@ -58,8 +58,9 @@ function showDots() {
 
 
     /**TO DO: Write JavaScript code to add each character's information onto the webpage**/
-    let container = document.createElement("div")
-    container.classList.add("grid-module")
+    let container = document.createElement("a")
+    container.classList.add("grid-modulee")
+    container.href= dot.fields.link
     
 
 const dotAttachments = document.createElement("img");

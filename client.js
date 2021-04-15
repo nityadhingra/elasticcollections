@@ -60,6 +60,7 @@ function showDots() {
     /**TO DO: Write JavaScript code to add each character's information onto the webpage**/
     let container = document.createElement("a")
     container.classList.add("grid-module")
+    container.href= dot.fields.link
 
 
    
